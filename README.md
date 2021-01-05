@@ -56,7 +56,9 @@ which wrote the original **[TC .NET Interface](https://totalcmd.net/plugring/TCd
 that runs on .NET 4.0 and is not that easy to get up and running.
  * [Oleg Yuvashev on sourceforge.net](https://sourceforge.net/p/tcdotnetinterface/code/HEAD/tree/trunk/)
 
-So I (René Larch) used his code (it is Licesed as MIT) and wrote this Nuget with it.
+René Larch used his code (it is Licesed as MIT) and wrote this Nuget with it.
+
+So, me (Martin Ficnar) continue with support this package under MIT license.
 
 ### Pros and cons of TcBuild.ficnar compared to TC .NET Interface
 

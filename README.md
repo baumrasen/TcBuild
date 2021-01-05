@@ -1,15 +1,16 @@
 
-# TcBuild
+# TcBuild.ficnar
 
-TcBuild is a tool to build Total Commander plugins that are written in .NET
+TcBuild.ficnar is a tool to build Total Commander plugins that are written in .NET forked from [r-Larch/TcBuild](https://github.com/r-Larch/TcBuild)
 
-[![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/TcBuild.ficnar.svg?style=flat)](https://www.nuget.org/packages/TcBuild.ficnar/)
+[![Nuget](https://img.shields.io/nuget/vpre/TcBuild.ficnar.svg?style=flat)](https://www.nuget.org/packages/TcBuild.ficnar/)
+![License](https://img.shields.io/github/license/ficnar/TcBuild.svg)
 
 
 ## Nuget
 
 ```powershell
-Install-Package TcBuild
+Install-Package TcBuild.ficnar
 ```
 
 ## Possible Plugins
@@ -26,8 +27,8 @@ See [Total Commander plugin types](https://www.ghisler.ch/wiki/index.php/Plugin#
 
 # Create a plugin
 
-Create a .NET Library Project targeting net472 or newer and install `TcBuild` nuget package.
-The TcBuild nuget comes with some base classes and interfaces to get you started.
+Create a .NET Library Project targeting net472 or newer and install `TcBuild.ficnar` nuget package.
+The TcBuild.ficnar nuget comes with some base classes and interfaces to get you started.
 So you just have to create a class inheriting from 
 one of the following plugin base classes:
 
@@ -42,7 +43,7 @@ Then override all methods that you like to support in your plugin.
 
 # Build a Release
 
-The TcBuild nuget contains a MsBuild Task to perform all required transformations on your .dll
+The TcBuild.ficnar nuget contains a MsBuild Task to perform all required transformations on your .dll
 and it produces a `.zip` file, in build output folder, which can be installed with Total Commander auto installer.
 
 More infos: [Installation using Total Commander's integrated plugin installer](https://www.ghisler.ch/wiki/index.php/Plugin#Installation_using_Total_Commander.27s_integrated_plugin_installer)
@@ -57,9 +58,9 @@ that runs on .NET 4.0 and is not that easy to get up and running.
 
 So I (René Larch) used his code (it is Licesed as MIT) and wrote this Nuget with it.
 
-### Pros and cons of TcBuild compared to TC .NET Interface
+### Pros and cons of TcBuild.ficnar compared to TC .NET Interface
 
-|						| TcBuild								| TC .NET Interface								|
+|						| TcBuild.ficnar							| TC .NET Interface								|
 |-----------------------|---------------------------------------|-----------------------------------------------|
 | .NET Version			| ✔️ .NET 4.7.2							| ❌.NET 1.0 & .NET 4.0							|
 | Getting started		| ✔️Install this Nuget					| ❌Lots of work									|

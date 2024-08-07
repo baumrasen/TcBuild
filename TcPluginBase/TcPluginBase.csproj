@@ -1,26 +1,19 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
-    <TargetFramework>net5.0-windows7.0</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <OutputPath>bin\</OutputPath>
     <Description>Base interfaces and classes for managed plugins for Total Commander.</Description>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <LangVersion>latest</LangVersion>
     <Nullable>enable</Nullable>
-
     <UseWindowsForms>true</UseWindowsForms>
     <UseWPF>true</UseWPF>
-
     <!--<GeneratePackageOnBuild>True</GeneratePackageOnBuild>-->
-
     <IsPackable>false</IsPackable>
-
   </PropertyGroup>
-
   <ItemGroup>
-    <PackageReference Include="System.Drawing.Common" Version="5.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="1.1.0" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="1.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.0" />
+    <PackageReference Include="System.Text.Json" Version="8.0.4" />
   </ItemGroup>
-
 </Project>

@@ -65,7 +65,8 @@
             // 
             this.lblException.AutoSize = true;
             this.lblException.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblException.ForeColor = System.Drawing.SystemColors.ControlText;
+            // this.lblException.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblException.ForeColor = System.Drawing.Color.Red;
             this.lblException.Location = new System.Drawing.Point(12, 7);
             this.lblException.Name = "lblException";
             this.lblException.Size = new System.Drawing.Size(51, 13);

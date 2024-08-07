@@ -1,30 +1,22 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
-    <TargetFramework>net5.0-windows7.0</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <OutputPath>bin\</OutputPath>
     <Description>Tool to build Total Commander Plugins</Description>
     <Nullable>enable</Nullable>
-
     <NoBuild>true</NoBuild>
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
-
   <ItemGroup>
     <PackageReference Include="DNNE" Version="1.0.19" PrivateAssets="None" ExcludeAssets="Build" />
     <!---->
-    <PackageReference Include="System.Drawing.Common" Version="5.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="1.1.0" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="1.1.0" />
   </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\TcBuildGenerator\TcBuildGenerator.csproj" PrivateAssets="None" />
     <ProjectReference Include="..\TcBuildTask\TcBuildTask.csproj" PrivateAssets="All" ReferenceOutputAssembly="false" />
     <ProjectReference Include="..\TcPluginBase\TcPluginBase.csproj" PrivateAssets="All" ReferenceOutputAssembly="false" />
   </ItemGroup>
-
   <PropertyGroup>
     <TargetsForTfmSpecificContentInPackage>$(TargetsForTfmSpecificContentInPackage);IncludeFilesInPackage</TargetsForTfmSpecificContentInPackage>
   </PropertyGroup>
@@ -32,13 +24,10 @@
     <ItemGroup>
       <!-- build.targets -->
       <TfmSpecificPackageFile Include="..\TcBuildTask\build\**\*.*" PackagePath="build\" />
-
       <!-- bin's for build target -->
       <TfmSpecificPackageFile Include="..\TcBuildTask\bin\**\*.*" Exclude="Microsoft.Build.*;Microsoft.VisualStudio.*" PackagePath="bin\" />
-
       <!-- references for target project -->
       <TfmSpecificPackageFile Include="..\TcPluginBase\bin\**\*" PackagePath="lib\" />
     </ItemGroup>
   </Target>
-
 </Project>
